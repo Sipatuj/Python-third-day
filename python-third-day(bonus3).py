@@ -16,10 +16,10 @@ print('В слове ',len(word),' букв')
 i = 4
 dor = input('Назовите вашу букву ')
 while i!=0:
-	for item in word:
-		if item == dor:
-			print('Итеррация',item)
-			print('da')
+	if dor in word:
+		print('Да')
+	else:
+		print('Нет')
 	i -= 1
 	dor = input('Назовите вашу букву ')
 
